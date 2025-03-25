@@ -1,0 +1,19 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "main": "test.js",
+  "scripts": {
+    "service1": "cd ..\\client && npm start",
+    "service2": "cd ..\\server && npm start",
+    "start": "concurrently \"npm run service1\" \"npm run service2\"",
+    "test": " mocha test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chai": "^5.2.0",
+    "mocha": "^11.1.0",
+    "puppeteer": "^24.4.0"
+  }
+}
